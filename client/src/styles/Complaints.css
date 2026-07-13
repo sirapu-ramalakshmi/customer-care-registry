@@ -1,0 +1,139 @@
+/* Main Layout */
+
+.complaint-container {
+  margin-left: 230px;
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+.complaint-body {
+  padding: 30px;
+}
+
+.complaint-body h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search + Filter */
+
+.complaint-body input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.complaint-body select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Form */
+
+.complaint-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.complaint-form input,
+.complaint-form select {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px;
+}
+
+.complaint-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.complaint-form button:hover {
+  background: #0056b3;
+}
+
+/* Table */
+
+.complaint-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.complaint-table th {
+  background: #007bff;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.complaint-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.complaint-table tr:hover {
+  background: #f5f5f5;
+}
+
+/* Status Dropdown */
+
+.complaint-table td select {
+  padding: 6px;
+  border-radius: 5px;
+}
+
+/* Delete Button */
+
+.complaint-table button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.complaint-table button:hover {
+  background: #b02a37;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .complaint-container {
+    margin-left: 0;
+  }
+
+  .complaint-form {
+    flex-direction: column;
+  }
+
+  .complaint-form input,
+  .complaint-form select,
+  .complaint-form button {
+    width: 100%;
+  }
+
+  .complaint-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
